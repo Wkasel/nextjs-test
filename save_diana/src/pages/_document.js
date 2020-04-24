@@ -6,7 +6,9 @@ export default class AppDocument extends Document {
   render() {
     return (
       <html lang="en">
-        <Head>{/* Any head tags can go here */}</Head>
+        <Head>
+          <link rel="stylesheet" href="https://use.typekit.net/jtw3hsc.css" />
+        </Head>
         <body>
           <Main />
           <NextScript />
