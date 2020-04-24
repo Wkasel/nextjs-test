@@ -1,15 +1,21 @@
 import React from "react";
-import { Button, Backdrop, AppBar, Box, Container, Typography } from "@material-ui/core";
+import {
+  Button,
+  Backdrop,
+  AppBar,
+  Box,
+  Container,
+  Typography,
+} from "@material-ui/core";
 import { withStyles, responsiveFontSizes } from "@material-ui/core/styles";
 import ButtonAppBar from "../components/buttonAppBar";
 import ItemGrid from "../components/itemGrid";
 import HomeCta from "../components/homeCta";
-import Footer from '../components/footer';
+import Footer from "../components/footer";
 import MissionStatement from "../components/missionStatment";
-import Globe from '../components/video'
+import Globe from "../components/video";
 import Grid from "@material-ui/core/Grid";
 import HomeGlobe from "../components/homeGlobe";
-
 
 // Only need to use this pattern if we are going to make reusable
 // notice the new component, WrapperBox - if we want to reuse then it
@@ -22,9 +28,9 @@ const WrapperBox = withStyles({
     width: "100%",
     height: "100%",
     display: "table",
-    overflowY: 'hidden',
+    overflowY: "hidden",
     zIndex: "unset",
-    overflowY: 'hidden', 
+    overflowY: "hidden",
   },
 })(Box);
 
@@ -37,13 +43,11 @@ const StyledBoxWhite = withStyles({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    overflowY: 'hidden',
+    overflowY: "hidden",
     color: "white",
     fontSize: "60px",
-    fontFamily: "Arial, Helvetica, sans-serif",
   },
 })(Container);
-
 
 const title = ["\t" + "Save", "Wearable Charity"];
 
@@ -51,7 +55,7 @@ const styles = {
   root: {
     flexGrow: 1,
     lineHeight: "20px",
-    overflowY: 'hidden'
+    overflowY: "hidden",
   },
   br: {
     lineHeight: "20px",
@@ -65,23 +69,23 @@ const styles = {
 
 const App = () => (
   <div>
-      <WrapperBox fixed>
-      <Grid container >
+    <WrapperBox fixed>
+      <Grid container>
         <Grid item xs={12}>
           <ButtonAppBar />
-          <HomeGlobe/>
+          <HomeGlobe />
         </Grid>
         <Grid item xs={12}>
-        <StyledBoxWhite>
-          <ItemGrid />
-        </StyledBoxWhite>
+          <StyledBoxWhite>
+            <ItemGrid />
+          </StyledBoxWhite>
         </Grid>
         <Grid item xs={12}>
-        <MissionStatement />
-        <Footer />
+          <MissionStatement />
+          <Footer />
         </Grid>
-        </Grid>
-      </WrapperBox>
+      </Grid>
+    </WrapperBox>
   </div>
 );
 

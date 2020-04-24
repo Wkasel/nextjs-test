@@ -6,8 +6,7 @@ import CharityNavBar from "../components/charityNavBar";
 import GridTest from "../components/itemGrid";
 import UserGrid from "../components/userGrid";
 import CharityGrid from "../components/charityGrid";
-import Footer from '../components/footer';
-
+import Footer from "../components/footer";
 
 const WrapperBox = withStyles({
   root: {
@@ -24,26 +23,24 @@ const StyledBoxBlue = withStyles({
     background: "#9dd8f4",
     width: "100%",
     height: "100%",
-    maxHeight: '100%',
+    maxHeight: "100%",
     display: "flex",
     color: "white",
     fontSize: "60px",
-    fontFamily: "Arial, Helvetica, sans-serif",
   },
 })(Container);
 
 export default function Charity() {
-  
   return (
-
-    <WrapperBox >
+    <WrapperBox>
       <CharityNavBar />
-      <StyledBoxBlue maxWidth="fixed" style={{ paddingTop: "30px", paddingBottom: "50px" }} >
+      <StyledBoxBlue
+        maxWidth="fixed"
+        style={{ paddingTop: "30px", paddingBottom: "50px" }}
+      >
         <CharityGrid />
       </StyledBoxBlue>
       <Footer />
     </WrapperBox>
- 
   );
-
 }

@@ -1,34 +1,29 @@
 import { Grid, Typography } from "@material-ui/core";
 import { withStyles, responsiveFontSizes } from "@material-ui/core/styles";
 import { Button, Backdrop, AppBar, Box, Container } from "@material-ui/core";
-import LoginForm from '../components/loginForm'
-
+import LoginForm from "../components/loginForm";
 
 const StyledBoxBlue = withStyles({
-    root: {
-      background: "#a4d8ef",
-      width: "100%",
-      minWidth: "100%",
-      height: "100%",
-      display: "block",
-      textAlign: "center",
-      position: "relative",
-      justifyContent: "center",
-      alignItems: "center",
-      marginLeft: "0px",
-      color: "white",
-      fontSize: "60px",
-      fontFamily: "Arial, Helvetica, sans-serif",
-    },
-  })(Box);
+  root: {
+    background: "#a4d8ef",
+    width: "100%",
+    minWidth: "100%",
+    height: "100%",
+    display: "block",
+    textAlign: "center",
+    position: "relative",
+    justifyContent: "center",
+    alignItems: "center",
+    marginLeft: "0px",
+    color: "white",
+    fontSize: "60px",
+  },
+})(Box);
 
-  
 export default function Login() {
-
-  return(
-
+  return (
     <StyledBoxBlue>
-        <img
+      <img
         src="/Ellipse 47.png"
         style={{
           position: "relative",
@@ -38,8 +33,8 @@ export default function Login() {
           display: "block",
           marginLeft: "auto",
           marginRight: "auto",
-          paddingTop: '200px',
-          paddingBottom: '200px',
+          paddingTop: "200px",
+          paddingBottom: "200px",
           zIndex: "1",
         }}
       />
@@ -53,7 +48,5 @@ export default function Login() {
       ></h2>
       <LoginForm />
     </StyledBoxBlue>
-
-  )
-
+  );
 }
