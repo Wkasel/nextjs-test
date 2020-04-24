@@ -29,3 +29,4 @@ dev-local-mongo.env
 stage.env
 
 .DS_Store
+.now

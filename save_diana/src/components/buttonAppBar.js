@@ -10,6 +10,7 @@ import Menu from '@material-ui/core/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Link from 'next/link';
+import { Box, Container } from "@material-ui/core";
 
 
 const styles = {
@@ -64,13 +65,13 @@ function ButtonAppBar(props) {
       onClose={handleMenuClose}
     >
       <MenuItem >
-        <Link href="/profile">
-            <a style={{textDecoration: 'none', color: 'black'}}><div>My Profile</div></a>
+        <Link href="#shop">
+            <a style={{textDecoration: 'none', color: 'black'}}><div>Shop</div></a>
         </Link>
       </MenuItem>
       <MenuItem>
-      <Link href="/charity">
-            <a style={{textDecoration: 'none', color: 'black'}}>Charity</a>
+      <Link href="#statement">
+            <a style={{textDecoration: 'none', color: 'black'}}><div>Mission Statement</div></a>
         </Link>
       </MenuItem>
     </Menu>

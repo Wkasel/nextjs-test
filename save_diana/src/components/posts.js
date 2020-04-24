@@ -13,6 +13,6 @@ export default function Posts() {
             <PostItem />
             <PostItem />
             <PostItem />
-          </Card>
+        </Card>
     )
 }
